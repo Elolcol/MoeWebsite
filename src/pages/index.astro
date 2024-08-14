@@ -1,0 +1,129 @@
+---
+import { Image } from "astro:assets"
+import logo from "../image/1713932388030.png"
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Moe Corp</title>
+  </head>
+  <body>
+    <h1>pagina de moecorp</h1>
+    <p>
+      esto es la pagina web de moe corp un proyecto open source que busca crear
+      sofware de codigo abierto
+    </p>
+    <Image class="image" src={logo} alt={"logo temporal de la"} />
+  </body>
+</html>
+
+<style>
+  /* Variables de color */
+  :root {
+    --color-primary: #ffd1dc; /* Rosa pastel */
+    --color-secondary: #ffe4e1; /* Rosa claro */
+    --color-text: #333; /* Texto principal */
+    --color-text-light: #555; /* Texto claro */
+    --color-background: #fff; /* Fondo principal */
+    --color-accent: #ffb6c1; /* Rosa acentuado */
+    --color-border: #ffcccc; /* Rosa claro */
+  }
+
+  /* Estilos generales */
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+  }
+
+  /* Contenedor principal */
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    color: var(--color-accent);
+  }
+
+  p {
+    max-width: 800px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--color-text-light);
+  }
+
+  /* Estilos de imagen */
+  .image {
+    display: block;
+    margin: 2rem auto;
+    max-width: auto;
+    width: auto;
+    border: 2px solid var(--color-border);
+    border-radius: 10px;
+  }
+
+  /* Estilos de enlace */
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  /* Estilos de botón */
+  button {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: var(--color-primary);
+  }
+
+  /* Estilos de lista */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem auto;
+    max-width: 600px;
+  }
+
+  ul li {
+    background-color: var(--color-secondary);
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 5px;
+  }
+
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    ul li {
+      font-size: 0.9rem;
+    }
+  }
+</style>
